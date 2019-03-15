@@ -43,8 +43,9 @@ const checkCurrentUsers = async () => {
   await saveUsers(users)
 }
 
-setInterval(async () => {
+let timer = setInterval(async () => {
   await checkCurrentUsers()
 }, 30000)
 
 checkCurrentUsers()
+module.exports = {checkCurrentUsers, saveUsers, timer}; // exporting these functions/components to be used in test.js

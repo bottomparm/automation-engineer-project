@@ -18,3 +18,5 @@ app.get('/users', async (req, res) => {
 
   res.json(users)
 })
+
+module.exports = app; // exporting our express app so that it may be imported and tested in our test.js file

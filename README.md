@@ -30,9 +30,15 @@ You should see both processes start up and print debug logs.
 Please use whatever tools/frameworks/methods you prefer to test the system and answer the following questions:
 
 1. Can the datafetcher get data from the third-party api successfully
-1. Can the datasaver save data successfully
-1. Are we running on schedule (every 30 seconds)?
-1. Is the whole system working? (we're looking for a description or example of how integration testing might work)
-1. What would you monitor to make sure it was still working, and how might you set that up? (no need to actually do it)
+2. Can the datasaver save data successfully
+3. Are we running on schedule (every 30 seconds)?
+4. Is the whole system working? (we're looking for a description or example of how integration testing might work)
+5. What would you monitor to make sure it was still working, and how might you set that up? (no need to actually do it)
 
 Feel free to edit the server code or change anything necessary to make testing eaiser/better. Comments explaining the thought process behind any changes would be much appreciated.
+
+## Assignment Responses
+
+4. All we need to do is type '$ npm run test' in our terminal to run all of our unit tests in succession. Mocha will execute our test.js file and all of the unit tests inside. It will also give error reports concerning the tests that did not pass, and what our expected test result was versus the result our program is giving us at the current time.
+
+5. If all tests were passing, then all you would need to monitor to ensure the program was running successfully is the fact that datafetcher.js and datasaver.js were running to ensure our local host is active and that our API is being called every 30 seconds respectively.

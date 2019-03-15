@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test.js"
   },
-  "author": "",
+  "author": "Dylan Hrebenach",
   "license": "UNLICENSED",
   "dependencies": {
+    "express": "^4.16.4",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-things": "^0.2.0",
+    "mocha": "^6.0.2",
+    "sinon": "^7.2.7",
+    "supertest": "^4.0.0"
   }
 }
